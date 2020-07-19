@@ -1,0 +1,20 @@
+// Follow + 2x Like
+session.set_user_interact(amount=2,
+                            percentage=70,
+                            randomize=True,
+                            media='Photo')
+session.follow_by_tags(['fakultet', 'ispit', 'indeks', 'ocena', 'pravni', 'index', 'beograd', 'ispitnirok', 'skola', 'skripta'], amount=10, interact=True),
+
+// Comment
+session.set_do_comment(enabled=True, percentage=25)
+session.set_comments(['Bravo! @{}', 'Svaka cast! @{}'])
+
+// Unfollow users that don't follow back
+session.unfollow_users(amount=126, nonFollowers=True, style="RANDOM", unfollow_after=48*60*60, sleep_delay=655)
+
+// Like by Locations
+session.like_by_locations(['221123603/pravni-fakultet-u-beogradu/', '4978579/matematicki-fakultet/', '33684945/hemijski-fakultet/', '19512385/poljoprivredni-fakultet-zemun/', '515899723/bioloski-fakultet/', '244502187/sumarski-fakultet-univerziteta-u-beogradu/', '240050881/fakultet-za-sport-i-fizicko-vaspitanje/', '506936011/filozofski-fakultet/'], amount=100)
+
+// Like by Tags
+session.set_user_interact(amount=3, randomize=True, percentage=100, media='Photo')
+sessio

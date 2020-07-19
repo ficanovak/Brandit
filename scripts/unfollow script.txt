@@ -1,0 +1,1 @@
+session.unfollow_users(amount=600, InstapyFollowed=(True, "all"), style="FIFO", unfollow_after=1*60*60, sleep_delay=90)

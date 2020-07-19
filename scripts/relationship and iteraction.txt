@@ -1,0 +1,20 @@
+session.login()
+    session.set_relationship_bounds(enabled=True,
+			    potency_ratio=None,
+			    delimit_by_numbers=True,
+			    max_followers=6000,
+				max_following=3000,
+				min_followers=30,
+				min_following=30)
+
+    amount_number=500
+
+    session.set_user_interact(amount=1, randomize=True, percentage=20, media='Photo')
+
+    session.set_do_like(enabled=True, percentage=100)
+
+    session.set_do_comment(enabled=False, percentage=0)
+	
+    session.set_do_follow(enabled=False, percentage=0)
+	
+    session.follow_user_followers(['travelawesome'], amount=amount_number, randomize=False, interact=True, sleep_delay=300)
